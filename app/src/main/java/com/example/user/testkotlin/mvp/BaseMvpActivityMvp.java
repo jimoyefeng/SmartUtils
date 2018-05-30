@@ -23,9 +23,12 @@ public abstract class BaseMvpActivityMvp<V extends BaseMvpView, P extends BasePr
         if (presenter == null) {
             throw new NullPointerException("presenter 不能为空!");
         }
-        //绑定view
+        //绑定viewsss
         presenter.attachMvpView((V) this);
         init();
+
+
+
     }
 
 
