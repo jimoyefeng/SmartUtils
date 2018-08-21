@@ -16,7 +16,7 @@ import java.util.*
  * Created by admin on 2018/2/12.
  */
 
- class MyImagineUtils {
+public class MyImagineUtils {
 
     fun showMsg(context: Context, msg: String?) {
 
