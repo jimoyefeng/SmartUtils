@@ -5,6 +5,7 @@ import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.net.Uri
 import android.util.Log
+import android.widget.Toast
 import java.io.ByteArrayOutputStream
 import java.io.File
 import java.io.FileOutputStream
@@ -15,7 +16,15 @@ import java.util.*
  * Created by admin on 2018/2/12.
  */
 
-object MyImagineUtils {
+ class MyImagineUtils {
+
+    fun showMsg(context: Context, msg: String?) {
+
+        if (null != msg)
+            Toast.makeText(context, msg, Toast.LENGTH_SHORT).show()
+
+
+    }
 
 
     fun getBtpathFormUri(context: Context, uri: Uri): String? {
