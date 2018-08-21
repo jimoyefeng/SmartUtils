@@ -12,7 +12,7 @@ import java.io.File
 object FilePathUtils {
 
 
-//    当SD卡存在或者SD卡不可被移除的时候
+//    当SD卡存在或者SD卡不可被移除的时候11
     fun getCachePath(applicationContext: Context): String {
         val cacheDir: File?
         if (android.os.Environment.getExternalStorageState() == android.os.Environment.MEDIA_MOUNTED || !Environment.isExternalStorageRemovable())
